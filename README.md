@@ -2,10 +2,6 @@
 
 A powerful 5×5 crafting system for Minecraft modpacks
 
-> 感谢 Claude Code 全程编写了此 Mod 99% 的内容！
->
-> Thank you Claude Code for writing 99% of this mod!
-
 ### 中文描述请往下滑 ↓ 
 
 ---
