@@ -1,0 +1,12 @@
+{
+    "block.super_crafting.super_crafting_table":     "슈퍼 제작대",
+    "container.super_crafting.super_crafting_table": "슈퍼 제작대",
+    "jei.super_crafting.super_crafting":             "슈퍼 제작대",
+    "itemGroup.super_crafting.items":                "슈퍼 제작",
+
+    "tooltip.super_crafting.view_in_jei":          "레시피 보기",
+    "tooltip.super_crafting.time_remaining":        "제작 중! 남은 시간: %ss",
+    "tooltip.super_crafting.work_time_cost":        "클릭하여 제작! 필요 시간: %ss",
+    "tooltip.super_crafting.output_occupied":       "합성된 아이템을 먼저 꺼내야 계속 합성할 수 있습니다.",
+    "jei.super_crafting.work_time":                "%ss"
+}

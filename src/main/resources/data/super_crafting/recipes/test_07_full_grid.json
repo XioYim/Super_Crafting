@@ -1,0 +1,41 @@
+{
+  "type": "super_crafting:super_crafting",
+  "work_time": 800,
+  "_comment":    "Test 7: All 25 slots active — outer ring iron×5, inner ring gold×3, center diamond×1. Tests full-grid detection and long craft time",
+  "_comment_tw": "測試7：全25格都啟用——外圈鐵錠×5，內圈金錠×3，中心鑽石×1。測試滿格檢測與長合成時間",
+  "ingredients": [
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 0},
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 1},
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 2},
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 3},
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 4},
+
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 5},
+    {"item": "minecraft:gold_ingot",  "count": 3, "slot": 6},
+    {"item": "minecraft:gold_ingot",  "count": 3, "slot": 7},
+    {"item": "minecraft:gold_ingot",  "count": 3, "slot": 8},
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 9},
+
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 10},
+    {"item": "minecraft:gold_ingot",  "count": 3, "slot": 11},
+    {"item": "minecraft:diamond",     "count": 1, "slot": 12},
+    {"item": "minecraft:gold_ingot",  "count": 3, "slot": 13},
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 14},
+
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 15},
+    {"item": "minecraft:gold_ingot",  "count": 3, "slot": 16},
+    {"item": "minecraft:gold_ingot",  "count": 3, "slot": 17},
+    {"item": "minecraft:gold_ingot",  "count": 3, "slot": 18},
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 19},
+
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 20},
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 21},
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 22},
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 23},
+    {"item": "minecraft:iron_ingot",  "count": 5, "slot": 24}
+  ],
+  "result": {
+    "item": "minecraft:beacon",
+    "count": 2
+  }
+}

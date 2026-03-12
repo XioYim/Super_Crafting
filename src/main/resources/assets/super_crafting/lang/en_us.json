@@ -1,0 +1,12 @@
+{
+    "block.super_crafting.super_crafting_table":     "Super Crafting Table",
+    "container.super_crafting.super_crafting_table": "Super Crafting Table",
+    "jei.super_crafting.super_crafting":             "Super Crafting Table",
+    "itemGroup.super_crafting.items":                "Super Crafting",
+
+    "tooltip.super_crafting.view_in_jei":          "View Recipe",
+    "tooltip.super_crafting.time_remaining":        "Crafting! Time remaining: %ss",
+    "tooltip.super_crafting.work_time_cost":        "Click to craft! Time required: %ss",
+    "tooltip.super_crafting.output_occupied":       "You must take out the crafted item before crafting again!",
+    "jei.super_crafting.work_time":                "%ss"
+}

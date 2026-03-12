@@ -1,0 +1,194 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="MIT"
+
+[[mods]]
+modId="${mod_id}"
+version="1.0"
+logoFile="logo.png"
+displayName="Super Crafting"
+displayURL="https://modrinth.com/mod/xioyim-super-crafting"
+description='''
+
+中文描述请往下滑 ↓
+
+==============================
+Super Crafting
+==============================
+
+Thank you Claude Code for writing 99% of this mod!
+
+
+A Forge mod for Minecraft 1.20.1 that greatly expands the vanilla crafting system.
+It introduces a new **5×5 Super Crafting Table** which supports complex recipes,
+timed crafting animations, command integration, and deep JEI support.
+
+【Core Features】
+
+- 5×5 Super Crafting Grid (up to 25 ingredient slots)
+- The block also works as an item container similar to a chest
+- Supports item, tag, count and NBT matching
+- Optional mirrored recipe support (left-right flip)
+- Configurable crafting time (work_time) with animation
+- Full JEI integration with recipe viewing and ingredient transfer
+
+【Recipe System】
+
+Recipes are defined using JSON files and support:
+
+- Custom ingredient positions (slot 0–24)
+- Custom ingredient counts and NBT matching
+- Custom result items with NBT
+- Custom crafting duration (work_time)
+
+【Optional Special Effects】
+
+Recipes can optionally trigger various events:
+
+- summon_item  
+  Spawns a floating display item above the block while crafting  
+  Used to visually show the item being crafted (false / true)
+
+- start_command_player  
+  Executes command(s) when crafting starts
+
+- tick_command_block  
+  Executes command(s) repeatedly during crafting  
+  Works similarly to a repeating command block  
+  Execution interval can be configured using "tick_interval"
+
+- finish_command  
+  Executes command(s) when crafting finishes
+
+All commands run with **permission level 4** and can be used for
+sounds, particles, titles, or datapack interactions.
+
+【JEI Integration】
+
+With JEI installed you can:
+
+- View full 5×5 recipes in JEI
+- See crafting duration
+- Bookmark recipes
+- Use one-click ingredient transfer
+
+【Important Notes】
+
+- This mod is primarily designed for modpacks and custom recipes
+- The block has **no default crafting recipe**
+- You must define recipes yourself
+- The mod includes **10 example recipes** as references
+
+- Slot numbers range from 0–24
+- NBT uses partial matching, but ListTag (like enchantments) requires exact matching
+- High-frequency tick commands may affect server performance
+- Requires JEI 15.0.0.0 or newer
+- If you encounter issues, please report them on GitHub
+
+【Known Issue】
+
+- If the block is broken while crafting, consumed ingredients will NOT be returned
+
+
+==============================
+超级合成台（Super Crafting）
+==============================
+
+感谢 Claude Code 全程编写了此 Mod 99% 的内容！非常感谢！你泰酷了！
+
+
+一个为 Minecraft 1.20.1 设计的 Forge 模组，在原版工作台基础上扩展合成系统，
+新增一个拥有 5×5 合成格的超级合成台方块，可实现更复杂的配方与自动化效果。
+
+【核心功能】
+
+- 5×5 超级合成台（最多 25 个材料槽）
+- 工作台同时具有物品存储功能，可像箱子一样存放物品
+- 支持物品、标签（Tag）、数量与 NBT 条件匹配
+- 配方支持镜像（左右翻转）匹配（需在配方中指定）
+- 可设置合成时间（work_time）并播放合成动画
+- 完整 JEI 集成，支持配方查看与一键材料转移
+
+【配方系统】
+
+配方通过 JSON 定义，支持：
+
+- 自定义材料位置（slot 0~24）
+- 自定义材料数量与 NBT 匹配
+- 自定义输出物品及 NBT
+- 自定义合成所需时间（work_time）
+
+【可选特殊效果】
+
+配方可绑定多种事件效果：
+
+- summon_item  
+  是否在合成开始时于方块上方生成一个悬浮展示物品  
+  用于显示正在合成的物品（false / true）
+
+- start_command_player  
+  合成开始时执行命令（可填写多条）
+
+- tick_command_block  
+  合成过程中每隔一定 tick 以方块为原点执行命令  
+  类似重复命令方块  
+  执行间隔可在配方中使用 "tick_interval" 设置（单位 tick）
+
+- finish_command  
+  合成完成时执行命令（可填写多条）
+
+以上命令均以 OP 权限等级 4 执行，
+可用于播放音效、生成粒子、显示标题或与数据包联动。
+
+【JEI 集成】
+
+安装 JEI 后可以：
+
+- 在 JEI 中查看完整的 5×5 配方布局
+- 查看合成所需时间
+- 收藏配方书签
+- 使用一键材料转移自动填充合成格
+
+【注意事项】
+
+- 本模组主要用于整合包辅助，需要自行编写配方
+- 模组方块默认没有合成配方，需要自行配置
+- 模组自带 10 个示例配方，用于参考配方写法
+
+- slot 编号范围为 0~24，对应 5×5 网格
+- NBT 为部分匹配，但 ListTag（如附魔列表）为精确匹配
+- 高频 tick_command 可能对服务器性能产生影响
+- 模组强制依赖 JEI 15.0.0.0 及以上版本
+- 如遇问题可前往 GitHub 提交 Issue
+
+【已知问题】
+
+- 如果玩家在合成过程中破坏方块，已消耗的材料不会返还
+
+§7§o- 当然这份描述也肯定不是我写的！感谢ChatGPT！
+'''
+
+authors="B站@小逸檬"
+credits="Claude Code"
+
+
+[[dependencies.super_crafting]]
+modId="forge"
+mandatory=true
+versionRange="${forge_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.super_crafting]]
+modId="minecraft"
+mandatory=true
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.super_crafting]]
+modId="jei"
+mandatory=true
+versionRange="[15.0.0.0,)"
+ordering="NONE"
+side="CLIENT"

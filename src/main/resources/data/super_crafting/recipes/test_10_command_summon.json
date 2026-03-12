@@ -1,0 +1,41 @@
+{
+    "type": "super_crafting:super_crafting",
+    "work_time": 200,
+
+    "_comment_summon":    "At crafting start, the iron pickaxe floats above the crafting table and disappears when done",
+    "_comment_summon_tw": "合成開始時，鐵鎬漂浮在工作台上方，合成完成後消失",
+    "summon_item": true,
+
+    "_comment_player":    "At crafting start, coordinates are relative to the crafting table",
+    "_comment_player_tw": "合成開始時，座標以工作台為原點",
+    "start_command_player": [
+        "title @s actionbar {§b§l铁镐合成中...}",
+        "playsound minecraft:block.anvil.land master @s ~ ~ ~ 0.5 1.5"
+    ],
+
+    "_comment_tick":    "Runs every 5 ticks (~ coords origin at crafting table, no @s entity context, messages suppressed)",
+    "_comment_tick_tw": "每 5 tick 執行一次（~ 座標以工作台為原點，無 @s 實體上下文，訊息已屏蔽）",
+    "tick_interval": 5,
+    "tick_command_block": [
+        "particle minecraft:crit ~ ~1.2 ~ 0.3 0.3 0.3 0.05 2",
+        "particle minecraft:smoke ~ ~0.5 ~ 0.15 0.15 0.15 0.02 1"
+    ],
+
+    "_comment_finish":    "Executed on crafting completion (~ coords origin at crafting table)",
+    "_comment_finish_tw": "合成完成時執行（~ 座標以工作台為原點）",
+    "finish_command": [
+        "playsound minecraft:block.anvil.use master @a[distance=..16] ~ ~ ~ 1 1",
+        "particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0.05 10"
+    ],
+
+    "ingredients": [
+        {"item": "minecraft:iron_ingot", "count": 3, "slot": 0},
+        {"item": "minecraft:iron_ingot", "count": 3, "slot": 1},
+        {"item": "minecraft:iron_ingot", "count": 3, "slot": 2},
+        {"tag": "forge:rods/wooden",     "count": 1, "slot": 10}
+    ],
+    "result": {
+        "item": "minecraft:iron_pickaxe",
+        "count": 1
+    }
+}

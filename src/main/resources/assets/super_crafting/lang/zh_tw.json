@@ -1,0 +1,12 @@
+{
+    "block.super_crafting.super_crafting_table":     "超級合成台",
+    "container.super_crafting.super_crafting_table": "超級合成台",
+    "jei.super_crafting.super_crafting":             "超級合成台",
+    "itemGroup.super_crafting.items":                "超級合成",
+
+    "tooltip.super_crafting.view_in_jei":          "查看配方",
+    "tooltip.super_crafting.time_remaining":        "正在合成！剩餘時間：%ss",
+    "tooltip.super_crafting.work_time_cost":        "點擊合成！所需時間：%ss",
+    "tooltip.super_crafting.output_occupied":       "你必須先取出已合成的物品，才能繼續合成。",
+    "jei.super_crafting.work_time":                "%ss"
+}

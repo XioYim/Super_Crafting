@@ -1,0 +1,34 @@
+{
+  "type": "super_crafting:super_crafting",
+  "work_time": 150,
+  "_comment":    "Test 8: Mirror matching — bottom-left triangle; game auto-supports bottom-right triangle (horizontal mirror). Validates matchesPattern(mirrored=true)",
+  "_comment_tw": "測試8：鏡像比對——左下三角形，遊戲會自動支援右下三角形（水平鏡像）。驗證 matchesPattern(mirrored=true)",
+  "_layout": [
+    "A . . . .",
+    "A A . . .",
+    "A A A . .",
+    ". . . . .",
+    ". . . . ."
+  ],
+  "_mirror_equivalent": [
+    ". . . . A",
+    ". . . A A",
+    ". . A A A",
+    ". . . . .",
+    ". . . . ."
+  ],
+  "ingredients": [
+    {"item": "minecraft:diamond", "count": 3, "slot": 0},
+
+    {"item": "minecraft:diamond", "count": 3, "slot": 5},
+    {"item": "minecraft:diamond", "count": 3, "slot": 6},
+
+    {"item": "minecraft:diamond", "count": 3, "slot": 10},
+    {"item": "minecraft:diamond", "count": 3, "slot": 11},
+    {"item": "minecraft:diamond", "count": 3, "slot": 12}
+  ],
+  "result": {
+    "item": "minecraft:diamond_block",
+    "count": 2
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "block.super_crafting.super_crafting_table":     "スーパークラフティングテーブル",
+    "container.super_crafting.super_crafting_table": "スーパークラフティングテーブル",
+    "jei.super_crafting.super_crafting":             "スーパークラフティングテーブル",
+    "itemGroup.super_crafting.items":                "スーパークラフティング",
+
+    "tooltip.super_crafting.view_in_jei":          "レシピを見る",
+    "tooltip.super_crafting.time_remaining":        "クラフト中！残り時間：%ss",
+    "tooltip.super_crafting.work_time_cost":        "クリックでクラフト！必要時間：%ss",
+    "tooltip.super_crafting.output_occupied":       "合成済みのアイテムを取り出してから合成してください。",
+    "jei.super_crafting.work_time":                "%ss"
+}

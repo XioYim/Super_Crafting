@@ -1,0 +1,25 @@
+{
+  "type": "super_crafting:super_crafting",
+  "work_time": 500,
+  "_comment":    "Test 6: NBT input + NBT output — consumes an Efficiency V enchanted book, produces a diamond pickaxe with Efficiency V + Unbreaking III + Silk Touch",
+  "_comment_tw": "測試6：NBT輸入+NBT輸出——消耗效率V附魔書，產出附有效率V+耐久III+精準採集的鑽石鎬",
+  "ingredients": [
+    {"item": "minecraft:diamond_pickaxe", "count": 1, "slot": 2},
+
+    {
+      "item": "minecraft:enchanted_book",
+      "count": 1,
+      "slot": 12,
+      "nbt": "{StoredEnchantments:[{id:\"minecraft:efficiency\",lvl:5s}]}"
+    },
+
+    {"item": "minecraft:diamond",         "count": 8, "slot": 20},
+    {"item": "minecraft:diamond",         "count": 8, "slot": 22},
+    {"item": "minecraft:diamond",         "count": 8, "slot": 24}
+  ],
+  "result": {
+    "item": "minecraft:diamond_pickaxe",
+    "count": 1,
+    "nbt": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:5s},{id:\"minecraft:unbreaking\",lvl:3s},{id:\"minecraft:silk_touch\",lvl:1s}]}"
+  }
+}

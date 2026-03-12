@@ -1,0 +1,24 @@
+{
+  "type": "super_crafting:super_crafting",
+  "work_time": 400,
+  "_comment":    "Test 4: NBT input matching — requires a Sharpness V diamond sword (tests partial NBT matching)",
+  "_comment_tw": "測試4：NBT輸入比對——需要一把鋒利V的鑽石劍（測試NBT部分比對）",
+  "ingredients": [
+    {"item": "minecraft:diamond", "count": 10, "slot": 0},
+    {"item": "minecraft:diamond", "count": 10, "slot": 4},
+
+    {
+      "item": "minecraft:diamond_sword",
+      "count": 1,
+      "slot": 12,
+      "nbt": "{Enchantments:[{id:\"minecraft:sharpness\",lvl:5s}]}"
+    },
+
+    {"item": "minecraft:blaze_rod", "count": 5, "slot": 20},
+    {"item": "minecraft:blaze_rod", "count": 5, "slot": 24}
+  ],
+  "result": {
+    "item": "minecraft:enchanted_golden_apple",
+    "count": 3
+  }
+}

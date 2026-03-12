@@ -1,0 +1,18 @@
+{
+    "type": "super_crafting:super_crafting",
+    "shaped": true,
+    "work_time": 200,
+    "_comment":    "Test 9: Shaped crafting mode ('shaped': true) — tests fixed slot positions without automatic pattern compression",
+    "_comment_tw": "測試9：定形合成模式（'shaped': true）——測試固定格位置，不自動壓縮圖案",
+    "ingredients": [
+        {"item": "minecraft:iron_ingot", "count": 23, "slot": 10},
+        {"item": "minecraft:iron_ingot", "count": 33, "slot": 12},
+        {"item": "minecraft:iron_ingot", "count": 53, "slot": 9},
+        {"tag": "forge:rods/wooden", "count": 18, "slot": 24}
+    ],
+    "result": {
+        "item": "minecraft:stone",
+        "count": 1,
+        "nbt": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:5s},{id:\"minecraft:unbreaking\",lvl:3s},{id:\"minecraft:silk_touch\",lvl:1s}]}"
+    }
+}

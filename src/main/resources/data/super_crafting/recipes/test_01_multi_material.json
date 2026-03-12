@@ -1,0 +1,55 @@
+{
+    "type": "super_crafting:super_crafting",
+    "work_time": 400,
+
+    "_comment":    "Test 1: Multiple materials × different counts, demonstrates multi-command + summon item effect",
+    "_comment_tw": "測試1：多種材料×不同數量，示範多條指令 + 召喚物品效果",
+
+    "summon_item": true,
+
+    "_comment_player":    "Executed at crafting start, origin at the crafting table",
+    "_comment_player_tw": "合成開始時以工作台為原點執行",
+    "start_command_player": [
+        "title @s actionbar {§b§l下界之星合成中...}",
+        "playsound minecraft:block.note_block.pling player @s ~ ~ ~ 999 1"
+    ],
+
+    "_comment_tick":    "Runs every 10 ticks (~ coords origin at crafting table, no @s entity context, messages suppressed)",
+    "_comment_tick_tw": "每 10 tick 執行一次（~ 座標以工作台為原點，無 @s，訊息已屏蔽）",
+    "tick_interval": 10,
+    "tick_command_block": [
+        "particle minecraft:end_rod ~ ~1.3 ~ 0.4 0.4 0.4 0.04 4",
+        "particle minecraft:soul_fire_flame ~ ~0.6 ~ 0.25 0.1 0.25 0.03 2"
+    ],
+
+    "_comment_finish":    "Executed on crafting completion, origin at the crafting table",
+    "_comment_finish_tw": "合成完成時以工作台為原點執行",
+    "finish_command": [
+        "playsound minecraft:entity.player.levelup master @a[distance=..24] ~ ~ ~ 1 1",
+        "particle minecraft:explosion_emitter ~ ~1 ~ 0 0 0 0 1",
+        "particle minecraft:totem_of_undying ~ ~1 ~ 0.6 0.6 0.6 0.1 80",
+        "title @a[distance=..16] actionbar {\"text\":\"✦ 下界之星合成完成！\",\"color\":\"gold\",\"bold\":true}"
+    ],
+
+    "ingredients": [
+        {"item": "minecraft:iron_ingot", "count": 8, "slot": 0},
+        {"item": "minecraft:iron_ingot", "count": 6, "slot": 1},
+        {"item": "minecraft:iron_ingot", "count": 4, "slot": 2},
+        {"item": "minecraft:iron_ingot", "count": 6, "slot": 3},
+        {"item": "minecraft:iron_ingot", "count": 8, "slot": 4},
+
+        {"item": "minecraft:gold_ingot", "count": 5, "slot": 10},
+        {"item": "minecraft:diamond",    "count": 2, "slot": 12},
+        {"item": "minecraft:gold_ingot", "count": 5, "slot": 14},
+
+        {"item": "minecraft:iron_ingot", "count": 8, "slot": 20},
+        {"item": "minecraft:iron_ingot", "count": 6, "slot": 21},
+        {"item": "minecraft:iron_ingot", "count": 4, "slot": 22},
+        {"item": "minecraft:iron_ingot", "count": 6, "slot": 23},
+        {"item": "minecraft:iron_ingot", "count": 8, "slot": 24}
+    ],
+    "result": {
+        "item": "minecraft:nether_star",
+        "count": 1
+    }
+}

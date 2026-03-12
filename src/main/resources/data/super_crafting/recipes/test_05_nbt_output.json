@@ -1,0 +1,19 @@
+{
+  "type": "super_crafting:super_crafting",
+  "work_time": 300,
+  "_comment":    "Test 5: NBT output — crafts an enchanted diamond sword (Sharpness V + Unbreaking III + Fire Aspect II) from basic materials",
+  "_comment_tw": "測試5：NBT輸出——普通材料合成附魔鑽石劍（鋒利V+耐久III+火焰附加II）",
+  "ingredients": [
+    {"item": "minecraft:diamond", "count": 5, "slot": 1},
+    {"item": "minecraft:diamond", "count": 5, "slot": 2},
+    {"item": "minecraft:diamond", "count": 5, "slot": 3},
+
+    {"item": "minecraft:stick",   "count": 2, "slot": 7},
+    {"item": "minecraft:stick",   "count": 2, "slot": 12}
+  ],
+  "result": {
+    "item": "minecraft:diamond_sword",
+    "count": 1,
+    "nbt": "{Enchantments:[{id:\"minecraft:sharpness\",lvl:5s},{id:\"minecraft:unbreaking\",lvl:3s},{id:\"minecraft:fire_aspect\",lvl:2s}]}"
+  }
+}
